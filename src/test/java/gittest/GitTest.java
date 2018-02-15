@@ -15,6 +15,7 @@ public class GitTest {
 	@Test
 	public void loginTest() throws IOException {
 		
+		System.setProperty("webdriver.chrome.driver", "C:\\My Softwares\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
